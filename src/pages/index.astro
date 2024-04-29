@@ -5,12 +5,13 @@ import Introduccion from '../components/Introduccion.astro';
 import Sorteo from '../components/Sorteo.astro'
 import Pasos from '../components/Pasos.astro';
 import Lista from '../components/Lista.astro'
+import Footer from '../components/Footer.astro';
 
 ---
 
 <Layout title="Sorteo">
 <NavBar/>
-<section>
+<section id="introduccion">
     <Introduccion/>
 </section>
 <section id="sorteo">
@@ -23,8 +24,9 @@ import Lista from '../components/Lista.astro'
     <Lista/>
  </section>
 <section id="sorteosPrevios"></section>
+
+<Footer/>
+
 </Layout>
 
-<style>
 
-</style>
