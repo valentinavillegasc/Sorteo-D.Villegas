@@ -1,9 +1,21 @@
 <div class="w-full p-5 flex flex-row gap-40 items-center bg-black bg-opacity-10">
     <img  src="./firmaDVillegas.png" alt="logo" class="w-80">
     <div class="text-3xl text-white">
-        <a href="" class="m-5">Sorteo</a>
-        <a href="" class="m-5">Pasos</a>
-        <a href="" class="m-5">Boletas</a>
-        <a href="" class="m-5">Sorteos previos</a>
+        <a href="#sorteo" class="m-5">Sorteo</a>
+        <a href="#pasos" class="m-5">Pasos</a>
+        <a href="#lista" class="m-5">Boletas</a>
+        <a href="#sorteosPrevios" class="m-5">Sorteos previos</a>
     </div>
 </div>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
